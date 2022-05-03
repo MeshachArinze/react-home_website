@@ -1,0 +1,30 @@
+.ImageChange {
+    padding: 2rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 498px) {
+    .ImageChange {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 489px) and (max-width: 768px) {
+    .ImageChange {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}

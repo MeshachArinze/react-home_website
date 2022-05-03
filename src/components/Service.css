@@ -1,0 +1,91 @@
+span {
+    font-size: .67rem;
+    letter-spacing: 3px;
+
+}
+
+.ProfileCardBody {
+    background-color: darkslategray;
+    padding: 1rem 0;
+}
+
+.ProfileCardBox {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    max-width: 50%;
+    height: 70%;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.ProfileCardBox span {
+    text-align: center;
+}
+
+.ProfileCardImg {
+    display: block;
+    margin: auto;
+}
+
+.ProfileCardImg img {
+    clip-path: circle();
+    object-fit: cover;
+    width: 80px;
+
+}
+
+.ProfileTagPrice {
+    display: block;
+    margin: auto;
+}
+
+.ProfileTagPrice span {
+    display: inline-block;
+}
+
+.ProfileList {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.ProfileCardButton {
+    display: flex;
+    justify-items: center;
+}
+
+.ProfileCardButton button {
+    background: tomato;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.ProfileCardButton button:hover {
+    background-color: orange;
+    transition: 1s;
+}
+
+@media (max-width: 486px) {
+  .ProfileCardBody {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 486px) and (max-width: 768px) {
+    .ProfileCardBody {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    
+}

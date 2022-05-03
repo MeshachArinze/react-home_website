@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.NavParent {
+  background: rgb(8, 8, 46);
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+  height: auto;
+}
+
+.nav__blue {
+    background-color: rgb(8, 8, 46);
+}
+
+
+.NavName {
+  color: #fff;
+  transform: translate(1.4rem, 1.3rem);
+  font-size: 1rem;
+}
+
+.NavChild {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.NavBtn {
+  display: flex;
+  align-self: flex-end;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: .5rem;
+  background: none;
+}
+
+.NavUlMenu {
+  height: 0;
+  overflow: hidden;
+  margin-top: .5rem;
+  transition: height 1s ease;
+}
+
+.showMenu {
+  height: 120px;
+  transition: all 1s ease;
+  background: rgb(8, 8, 46);
+}
+
+.NavUl {
+  display: flex;
+  flex-direction: column;
+}
+
+.NavUl li{
+  margin-bottom: 1.1rem;
+  margin-left: 1.5rem;
+}
+
+.NavUl li a {
+  margin-bottom: 1.5rem;
+  color: #fff;
+  font-size: .8rem;
+}
+
+
+
+@media (min-width: 769px) {
+
+  .NavParent {
+    height: 50px;
+  }
+
+  .NavChild {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .NavName {
+    font-size: .89rem;
+    transform: translate(2rem, 1rem);
+  }
+
+  .NavBtn {
+    display: none;
+  }
+
+  .NavUlMenu {
+    height: auto;
+    transform: translate(-2rem, -.5rem);
+  }
+
+  .NavUl {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .NavUl li {
+    margin-left: 1.5rem;
+  }
+
+}

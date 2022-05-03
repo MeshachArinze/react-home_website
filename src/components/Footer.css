@@ -1,0 +1,148 @@
+.Footer_background {
+    background: rgba(0, 0, 0, 0.933);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.Footer_bottom {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.Footer_page {
+    margin-bottom: 1rem;
+    color: aliceblue;
+    word-spacing: 3px;
+    font-size: .8rem;
+}
+
+.Footer_page strong {
+    color: crimson;
+    margin: 0 10px;
+}
+
+.Footer_subscribe {
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer_update {
+    display: inline-block;
+    color: aliceblue;
+    margin-bottom: 1.5rem;
+    font-size: .8rem;
+}
+
+.Footer_update strong {
+    display: flex;
+}
+
+.Footer_update strong a {
+    margin: 0 5px;
+    color: crimson;
+    letter-spacing: 2px;
+}
+
+.Footer_Form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer_Form input {
+    padding: .6rem;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: .8rem;
+}
+
+.Footer_Form button {
+    padding: .4rem;
+    width: 30%;
+    margin: auto;
+    border: none;
+    border-radius: 5px;
+    color: aliceblue;
+    background: crimson;
+    cursor: pointer;
+}
+
+.Footer_Table {
+    margin: 2rem 0;
+}
+
+table {
+    width: 100%;
+}
+
+tbody {
+    margin: .5rem 0;
+}
+
+.Footer_column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer_column th {
+    color: rgb(211, 29, 29);
+    font-size: .78rem;
+    margin-bottom: .5rem;
+}
+
+.Network, .Developer, .Company, .News {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+td {
+    color: #fff;
+    font-size: .59rem;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 486px) {
+    .Footer_background {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Footer_bottom {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .Footer_page  {
+        font-size: .58rem;
+    }
+
+    .Footer_subscribe * {
+        font-size: .58rem;
+    }
+
+    form {
+        display: block;
+    }
+
+    form input {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 487px) and (max-width: 768px) {
+    form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    input {
+        width: 60%;
+        margin: auto;
+    }
+}

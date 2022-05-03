@@ -1,0 +1,114 @@
+.HomeApp {
+  background-color: beige;
+  height: 100%;
+}
+
+.HomeBackGround {
+  display: flex;
+  flex-direction: column;
+}
+
+.Home {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: #fff;
+  margin-bottom: .5rem;
+
+}
+
+.HomeDetail {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.HomeDetail h2 {
+  color: rgb(21, 10, 95);
+  font-size: .8rem;
+}
+
+.HomeDetail p {
+  margin-bottom: 2rem;
+  font-size: .6rem;
+}
+
+.Home button {
+  padding: 0 .2rem;
+  border: none;
+  margin-bottom: .5rem;
+  background: none;
+  cursor: pointer;
+}
+
+.HomeResizeImg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;;
+}
+
+.HomeResizeImg img {
+  max-width: 50%;
+  margin: 1rem auto;
+  object-fit: cover;
+  padding-bottom: 1.5rem;
+  border-radius: 6px;
+}
+
+.HomeResizeImg button {
+  padding: 1rem;
+  margin: 1rem auto;
+  background-color: rgb(21, 10, 95);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: .8rem;
+}
+
+@media (max-width: 486px) {
+  .HomeApp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .HomeBackGround {
+    width: 50%;
+  }
+
+  .HomeDetail {
+    font-size: .3rem;
+  }
+
+}
+
+@media (min-width: 487px) and (max-width: 768px) {
+
+  .HomeApp {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .HomeBackGround {
+    max-width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;
+  }
+  .Home {
+    display: block;
+  }
+
+  .Home h2 {
+    margin-bottom: 1.3rem;
+  }
+
+  .Home h2:nth-child(2) {
+    margin-bottom: 1.3rem;
+  }
+
+
+}
